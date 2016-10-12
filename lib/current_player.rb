@@ -1,14 +1,17 @@
 def turn_count(board)
-  i = 0
-  count = 0
-  board.each do |index|
-    if index == "X" || index == "O"
-      count +=1
-    end
+  count=0
+  board.each do |hi|
+    if hi=="X" || hi=="O"
+      count+=1
+  end
+
 end
 count
 end
-
 def current_player(board)
-  turn_count(board).even? ? "X" : "O"
+if  turn_count(board)%2==0
+  "X"
+else
+  "O"
+end
 end
