@@ -1,15 +1,15 @@
 def turn_count(board)
-  count=0
+  count = 0
   board.each do |hi|
-    if hi=="X" || hi=="O"
-      count+=1
-  end
+if hi == "X" || hi == "O"
+  count += 1
 
 end
-count
+  end
+  count
 end
 def current_player(board)
-if  turn_count(board)%2==0
+if turn_count(board) %2==0
   "X"
 else
   "O"
